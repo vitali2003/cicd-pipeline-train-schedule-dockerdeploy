@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("vitali2003/train-schedule")
+                    app = docker.build("vitaly2003/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
